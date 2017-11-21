@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Transfermoney";
+    var code = ViewBag.Code;
+}
+
+<h2>Transfermoney</h2>
+@using (Html.BeginForm("transfermoney", "home"))
+{
+    <input name="code" type="hidden"/>
+    <h2> Receiver Code : <input name="code2" /></h2>
+    <h2> Amount : <input name="money" /></h2>
+    <input type="submit" value="send" />
+}

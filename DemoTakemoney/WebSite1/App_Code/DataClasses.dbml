@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="bank" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-9OMEISA;Initial Catalog=bank;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="bankConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tblAcount" Member="tblAcounts">
+    <Type Name="tblAcount">
+      <Column Name="[_code]" Member="_code" Type="System.String" DbType="VarChar(60) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[_pass]" Member="_pass" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="[_name]" Member="_name" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="[_current]" Member="_current" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblmoney" Member="tblmoneys">
+    <Type Name="tblmoney">
+      <Column Name="[_user]" Member="_user" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="[_type]" Member="_type" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="[_withdraw]" Member="_withdraw" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="[_date]" Member="_date" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

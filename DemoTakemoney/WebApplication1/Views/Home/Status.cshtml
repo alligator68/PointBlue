@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Status";
+    var code = ViewBag.ListLog;
+}
+
+<h2>Status</h2>
+<table>
+    @foreach (var log in code)
+    {
+        <tr>
+            <td>@log.</td>
+        </tr>
+    }
+
+</table>

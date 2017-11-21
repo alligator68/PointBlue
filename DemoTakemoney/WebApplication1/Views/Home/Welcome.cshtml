@@ -1,0 +1,14 @@
+﻿
+@{
+    var code = ViewBag.Code;
+    var name = ViewBag.Name;
+    var current = ViewBag.Current;
+}
+
+<h2>Welcome</h2>
+<h2>Name : @name</h2>
+
+<h2>current money : @current</h2>
+<a href="Takemoney?code=@code" >with draw money</a><br />
+<a href="Transfermoney?code=@code">Transfer money</a><br />
+<a href="Status">View Log</a>

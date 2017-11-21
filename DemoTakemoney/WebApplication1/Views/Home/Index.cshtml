@@ -1,0 +1,14 @@
+﻿@{
+    var massage = ViewBag.Message;
+}
+<h1>
+    @massage
+</h1>
+@using (Html.BeginForm("About","home"))
+{
+    <input type="text" name="user"/>
+    <input type="password" name="pass"/>
+    <input type="submit" value="Login"/>
+}
+
+

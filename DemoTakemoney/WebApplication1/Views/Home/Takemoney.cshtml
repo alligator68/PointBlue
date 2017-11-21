@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Takemoney";
+    var code = ViewBag.Code;
+
+}
+
+<h2>Takemoney</h2>
+
+
+@using (Html.BeginForm("Actiontakemoney", "home"))
+{
+    <input type="hidden" name="code" value="@code"/>
+<h2> Amount : <input name="money"/></h2>
+<input type="submit" value="Withdraw"/>
+}
+
